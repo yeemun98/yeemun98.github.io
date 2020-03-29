@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>Alpaca Lover</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            // Toggle grid padding
+            function myFunction() {
+              var x = document.getElementById("myGrid");
+              if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+              } else { 
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+              }
+            }
+
+            // Open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "100%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+                <i class="fa fa-remove"></i>
+            </a>
+            <div class="w3-bar-block w3-center">
+                <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+                <a href="HappyAlpaca.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Types of Alpaca</a>
+                <a href="Huacaya.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Huacaya</a>
+                <a href="Suri.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Suri</a>
+                <a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About Author</a>
+            </div>
+        </nav>
+
+        <!-- !PAGE CONTENT! -->
+        <div class="w3-content" style="max-width:1500px">
+
+            <!-- Header -->
+            <div class="w3-opacity">
+                <span class="w3-button w3-xxlarge w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+                <div class="w3-clear"></div>
+                <header class="w3-center w3-margin-bottom">
+                    <a href="index.html"><h1 class="bigTitle"><b>ALPACA LOVER</b></h1></a>
+                    <a href="HappyAlpaca.html"><p class="learnMore"><b>LEARN MORE ABOUT ALPACA...</b></p></a>
+                    <p><b>Welcome to the alpaca sites! To those Alpaca's lovers, you have come to the right place! Learn more about Alpaca and love them!</b></p>
+                    <p class="w3-padding-16"><button class="w3-button w3-black" onclick="myFunction()">Toggle Grid Padding</button></p>
+                </header>
+            </div>
+
+            <!-- Photo Grid -->
+            <div class="w3-row" id="myGrid" style="margin-bottom:128px">
+                <div class="w3-third">
+                    <img src="Images/Alpaca1.jpg" style="width:100%" alt="Alpaca smiles in Peru">
+                    <img src="Images/Alpaca2.jpg" style="width:100%" alt="Alpaca showing teeth when smiling">
+                    <img src="Images/Alpaca3.jpg" style="width:100%" alt="Alpaca close their eyes">
+                    <img src="Images/Alpaca4.jpg" style="width:100%" alt="Alpaca appear in brown color in Peru zoo">
+                    <img src="Images/Alpaca5.jpg" style="width:100%" alt="Alpaca hiding its eyes in zoo">
+                    <img src="Images/Alpaca6.jpg" style="width:100%" alt="Alpaca shows funny face when smiling">
+                </div>
+
+                <div class="w3-third">
+                    <img src="Images/Alpaca7.jpg" style="width:100%" alt="Alpaca with white skin tone is sleeping">
+                    <img src="Images/Alpaca8.jpg" style="width:100%" alt="Alpaca acts cute in the Peru zoo">
+                    <img src="Images/Huacaya1.jpg" style="width:100%" alt="Huacaya Alpaca in Peru">
+                    <img src="Images/Huacaya2.jpg" style="width:100%" alt="Huacaya ALpaca is showing ugly face">
+                    <img src="Images/Suri1.jpg" style="width:100%" alt="Two Suri Alpaca are resting in the zoo">
+                    <img src="Images/Suri2.jpg" style="width:100%" alt="Many Suri Alpaca are found in the zoo">
+                </div>
+
+                <div class="w3-third">
+                    <img src="Images/Huacaya3.jpg" style="width:100%" alt="Huacaya Alpaca is having its food">
+                    <img src="Images/Suri3.jpg" style="width:100%" alt="Suri Alpaca is looking at the camera">
+                    <img src="Images/Suri4.jpg" style="width:100%" alt="Suiri Alpaca is walking slowly in the zoo">
+                    <img src="Images/Huacaya4.jpg"style="width:100%" alt="Huacaya Alpaca is being touched in the Peru zoo">
+                    <img src="Images/Huacaya5.jpg" style="width:100%" alt="Huacaya Alpaca has lots of fur">
+                    <img src="Images/Suri5.jpg" style="width:100%" alt="Suri Alpaca is smiling">
+                </div>
+            </div>
+
+            <!-- End Page Content -->
+        </div>
+        
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"> 
+            <div class="w3-container w3-black" id="subscribeBar">
+                <h1>Subscribe</h1>
+                <p>Get immediate acknowledgement if we update our sites:</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+                <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+            </div>
+            <br>
+            <a href="About.html"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-instagram w3-hover-opacity "></i></a>
+            <a href="About.html"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            
+            <p class="w3-medium">Copyright &copy; 2020 <a href="index.html" class="copyright"><b>Alpaca Lover</b></a> </p>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a><p>
+        </footer>
+    </body>
+</html>

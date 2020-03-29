@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>About Author</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="style.css">
+        <script>
+            // Toggle grid padding
+            function myFunction() {
+              var x = document.getElementById("myGrid");
+              if (x.className === "w3-row") {
+                x.className = "w3-row-padding";
+              } else { 
+                x.className = x.className.replace("w3-row-padding", "w3-row");
+              }
+            }
+
+            // Open and close sidebar
+            function w3_open() {
+              document.getElementById("mySidebar").style.width = "100%";
+              document.getElementById("mySidebar").style.display = "block";
+            }
+
+            function w3_close() {
+              document.getElementById("mySidebar").style.display = "none";
+            }
+        </script>
+    </head>
+    <body>
+        <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
+            <a href="javascript:void(0)" onclick="w3_close()" class="w3-button w3-black w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
+                <i class="fa fa-remove"></i>
+            </a>
+            <div class="w3-bar-block w3-center">
+                <a href="index.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Home</a>
+                <a href="HappyAlpaca.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Types of Alpaca</a>
+                <a href="Huacaya.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Huacaya</a>
+                <a href="Suri.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">Suri</a>
+                <a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">About Author</a>
+            </div>
+        </nav>
+        <div class="w3-content" style="max-width:1500px">
+
+            <!-- Header -->
+            <div class="w3-opacity">
+                <span class="w3-button w3-xxlarge w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span> 
+                <div class="w3-clear"></div>
+                <header class="w3-center w3-margin-bottom">
+                    <a href="index.html"><h1 class="bigTitle"><b>ALPACA LOVER</b></h1></a>
+                    <p class="secondTitle"><b>ABOUT AUTHOR</b></p>
+                    <div class="w3-container" >
+                        <div class="w3-content" style="max-width:700px">
+                            <div class="w3-panel w3-leftbar w3-light-grey">
+                                <p><i>"Explore your hobbies. Never too late, never too early. Nothing can stop the flying dreams. Fresh is the new sweet."</i></p>
+                                <p>Author, Ooi</p>
+                            </div>
+                        </div>
+                    </div>
+                </header>
+            </div>
+        </div>
+        
+        <div class="w3-container"  id="desc1" style="padding-left: 40%;padding-top: 80px;padding-bottom: 50px;">
+            <div class="w3-center" style="padding-bottom: 100px;padding-right: 67%;">
+                <span class="w3-xlarge w3-bottombar w3-border-dark-grey w3-padding-16">About Me</span>
+            </div>
+            <div class="w3-third w3-margin-bottom">
+                <div class="w3-card-4">
+                    <img src="Images/Myself.png" alt="Author of Alpaca Lover" style="width:100%">
+                    <div class="w3-container">
+                        <h3>Ooi Yee Mun</h3>
+                        <p class="w3-opacity">Photographer</p>
+                        <p>I love taking pictures especially pictures of nature and animals. Alpaca is my most favourite animal, I would like stay with them forever. I like to travel everywhere and wish to travel to Peru.</p>
+                        <p><strong>Mail:</strong> yee123@alpaca.com</p>
+                        <p><strong>Tel:</strong> 0123455776</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Contact section -->
+        <div class="w3-container w3-padding-32 w3-padding-large" id="desc2">
+            <div class="w3-content" style="max-width:600px">
+                <h4 class="w3-center"><b>Contact Me</b></h4>
+                <p>Do you want me to photograph you? Fill out the form and fill me in with the details :) I love meeting new people!</p>
+                <div >
+                    <div class="w3-section">
+                        <label>Name</label>
+                        <input class="w3-input w3-border" type="text" name="Name" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Email</label>
+                        <input class="w3-input w3-border" type="text" name="Email" required>
+                    </div>
+                    <div class="w3-section">
+                        <label>Message</label>
+                        <input class="w3-input w3-border" type="text" name="Message" required>
+                    </div>
+                    <a href="About.html"><button class="w3-button w3-block w3-black w3-margin-bottom">Send Message</button></a>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <footer class="w3-container w3-padding-64 w3-light-grey w3-center w3-opacity w3-xlarge"> 
+            <div class="w3-container w3-black" id="subscribeBar">
+                <h1>Subscribe</h1>
+                <p>Get immediate acknowledgement if we update our sites:</p>
+                <p><input class="w3-input w3-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+                <button type="button" class="w3-button w3-red w3-margin-bottom">Subscribe</button>
+            </div>
+            <br>
+            <a href="About.html"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-snapchat w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-pinterest-p w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-twitter w3-hover-opacity"></i></a>
+            <a href="About.html"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
+            
+            <p class="w3-medium">Copyright &copy; 2020 <a href="index.html" class="copyright"><b>Alpaca Lover</b></a> </p>
+            <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank" class="w3-hover-text-green">w3.css</a><p>
+        </footer>
+    </body>
+</html>

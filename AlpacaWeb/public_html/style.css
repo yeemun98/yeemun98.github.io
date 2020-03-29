@@ -1,0 +1,130 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/* 
+    Created on : Mar 28, 2020, 5:59:32 PM
+    Author     : User
+*/
+body,h1{
+    font-family: "Montserrat", sans-serif;
+}
+img {
+    margin-bottom: -7px
+}
+.w3-row-padding img {
+    margin-bottom: 12px
+}
+a{
+    text-decoration: none;
+}
+html{
+    background-color: #ffcccc;
+}
+.bigTitle{
+    font-family: "Brush Script MT", cursive;
+    font-size: 60px;
+    -webkit-animation: glow 1s ease-in-out infinite alternate;
+    -moz-animation: glow 1s ease-in-out infinite alternate;
+     animation: glow 1s ease-in-out infinite alternate;
+     color: #fff;
+}
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 7px #fff, 0 0 17px #fff, 0 0 27px #e60073, 0 0 37px #e60073, 0 0 47px #e60073, 0 0 57px #e60073, 0 0 67px #e60073;
+  }
+  
+  to {
+    text-shadow: 0 0 12px #fff, 0 0 22px #ff4da6, 0 0 32px #ff4da6, 0 0 42px #ff4da6, 0 0 52px #ff4da6, 0 0 62px #ff4da6, 0 0 72px #ff4da6;
+  }
+}
+.learnMore{
+    font-size: 25px;
+}
+.secondTitle{
+    font-size: 40px;
+}
+.content{
+    background-color: white;
+    font-size: 180px;
+}
+.column {
+  float: left;
+  width: 20%;
+}
+.column img{
+    height: 220px;
+    transition: transform .2s;
+}
+.column img:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2); 
+}
+.copyright:hover{
+    color: lightsalmon;
+}
+#desc1{
+    background-color: #ffeded;
+}
+#subscribeBar{
+    margin-top: 65px;
+}
+#type{
+    transition: transform .2s;
+}
+#type:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2); 
+}
+.columnHappy{
+    float:left;
+    padding: 30px;
+    width: 50%;
+}
+.columnHappy img{
+    height: 180px;
+    margin-bottom: 50px;
+    transition: transform .2s;
+}
+.columnHappy img:hover{
+    -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2); 
+}   
+#desc1 p,#desc2 p{
+    text-align: justify;
+}
+.tooltip {
+  position: relative;
+  display: inline-block;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  
+  /* Position the tooltip */
+  position: absolute;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+#else{
+    transition: transform .2s;
+}
+#else:hover{
+     -ms-transform: scale(1.2); /* IE 9 */
+    -webkit-transform: scale(1.2); /* Safari 3-8 */
+     transform: scale(1.2); 
+}
